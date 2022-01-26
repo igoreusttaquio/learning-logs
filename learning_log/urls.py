@@ -21,4 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # include the module learning_logs.urls
     path('', include('learning_logs.urls')),
+    # include the module user.urls
+    path('users/', include('users.urls')),
 ]

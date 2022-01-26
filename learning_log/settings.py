@@ -31,8 +31,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    # My apps
+    # My apps.Django will include the my appa in the overall project.
     'learning_logs',
+    'users',
     
     # Default Django apps.
     'django.contrib.admin',

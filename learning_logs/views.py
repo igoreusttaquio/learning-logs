@@ -17,7 +17,9 @@ def index(request):
 @login_required
 def topics(request):
     """Show all topics."""
-    topics = Topic.objects.order_by('date_added')
+    # When a user is logged in, the request object has a request.user attribute set
+    #  that stores information about the user.
+    topics = Topic.objects.filter(owner=request.user).order_by('date_added')
     context = {'topics': topics}
     return render(request, 'learning_logs/topics.html', context)
 

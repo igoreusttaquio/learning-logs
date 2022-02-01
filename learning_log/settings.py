@@ -34,6 +34,9 @@ INSTALLED_APPS = [
     # My apps.Django will include the my appa in the overall project.
     'learning_logs',
     'users',
+
+    # Third party apps.
+    'bootstrap4',
     
     # Default Django apps.
     'django.contrib.admin',
